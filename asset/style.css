@@ -70,6 +70,33 @@ body {
 #hamburger {
   display: none;
 }
+.navbar .search-box {
+  display: flex;
+  position: absolute;
+  width: 35rem;
+  height: 3rem;
+  right: 1%;
+  transform: scaleY(0);
+  top: 100%;
+  background-color: #fff;
+  align-items: center;
+}
+.navbar .search-box #search-input {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 0 2px;
+}
+.navbar .search-box .search-btn {
+  color: var(--bg);
+}
+.navbar .search-box .search-btn:hover {
+  color: var(--primary);
+}
+.navbar .search-box.active {
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: 0.2s;
+}
 
 /* hero section */
 .hero {
@@ -317,6 +344,10 @@ footer .credit a {
   }
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .navbar .search-box.active {
+    right: 10%;
   }
   .about .row {
     flex-wrap: wrap;

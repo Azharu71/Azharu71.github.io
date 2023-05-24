@@ -15,7 +15,7 @@ document.querySelector("#search").onclick = (e) => {
 
 const hamburger = document.querySelector("#hamburger");
 const search = document.querySelector("#search");
-const input = document.querySelector(".search-box input,i");
+const input = document.querySelector(".search-box .form-search");
 
 document.addEventListener("click", function (e) {
   if (!hamburger.contains(e.target)) {

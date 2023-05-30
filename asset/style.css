@@ -58,7 +58,7 @@ body {
   transition: 0.3s linear;
 }
 .navbar .navbar-nav a:hover::after {
-  transform: scaleX(0.5);
+  transform: scaleX(0.7);
 }
 .navbar .navbar-extra a {
   color: #fff;
@@ -84,7 +84,6 @@ body {
 .navbar .search-box .form-search {
   flex-direction: column;
   width: 100%;
-  border: 1px solid red;
 }
 .navbar .search-box #search-input {
   font-size: 1.2rem;
@@ -101,6 +100,49 @@ body {
   transform: scaleY(1);
   transform-origin: top;
   transition: 0.2s;
+}
+.navbar .shoping-cart {
+  display: block;
+  position: absolute;
+  text-align: center;
+  right: -100%;
+  top: 100%;
+  width: 20rem;
+  min-height: 20rem;
+  background-color: #fff;
+  color: var(--bg);
+  transition: 0.3s;
+}
+.navbar .shoping-cart.active{
+  right: 0;
+  transition: 0.3s;
+}
+.navbar .shoping-cart p {
+  font-weight: bold;
+}
+.navbar .shoping-cart p span {
+  color: var(--primary);
+}
+.navbar .shoping-cart .product {
+  border-bottom: 2px dotted rgba(1, 1, 1, 0.8) ;
+  display: flex;
+  width: 90%;
+  margin: 2rem auto;
+  align-items: center;
+  padding: 0.5rem;
+}
+.navbar .shoping-cart .product a{
+  color: var(--bg);
+  margin: 0 0.3rem;
+}
+.navbar .shoping-cart .product a:hover {
+  color: var(--primary);
+}
+.navbar .shoping-cart img {
+  display: block;
+  width: 20%;
+  flex: 1;
+  margin: 2px;
 }
 
 /* hero section */
@@ -350,15 +392,19 @@ footer .credit a {
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
   }
-  .navbar .search-box #search-input{
+  .navbar .search-box #search-input {
     font-size: 1.4rem;
   }
   .navbar .search-box {
-    width: 90%;
+    width: 100%;
     font-size: 1.3rem;
   }
   .navbar .search-box.active {
     right: 0;
+  }
+  .navbar .shoping-cart{
+    width: 35rem;
+    font-size: 1.7rem;
   }
   .about .row {
     flex-wrap: wrap;

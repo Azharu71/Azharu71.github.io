@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link rel="stylesheet" href="asset/style.css" />
   </head>
   <body>
@@ -23,6 +24,7 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang kami</a>
         <a href="#menu">Menu</a>
+        <a href="#product">Product</a>
         <a href="#contact">Contact</a>
         <a href="#socials">Follow Me</a>
       </div>
@@ -46,19 +48,7 @@
       <div class="shoping-cart">
         <p>Shoping Cart <span>Anda</span></p>
         <div class="product">
-          <img src="./asset/menu/menu-expreso.jpg" alt="" />
-          <p>Espreso <span>RP 20.000.00</span></p>
-          <a href="#"><i data-feather="trash-2"></i></a>
-          <a href="#"><i data-feather="dollar-sign"></i></a>
-        </div>
-        <div class="product">
-          <img src="./asset/menu/menu-expreso.jpg" alt="" />
-          <p>Espreso <span>RP 20.000.00</span></p>
-          <a href="#"><i data-feather="trash-2"></i></a>
-          <a href="#"><i data-feather="dollar-sign"></i></a>
-        </div>
-        <div class="product">
-          <img src="./asset/menu/menu-expreso.jpg" alt="" />
+          <img src="./asset/shop.jpg" alt="" />
           <p>Espreso <span>RP 20.000.00</span></p>
           <a href="#"><i data-feather="trash-2"></i></a>
           <a href="#"><i data-feather="dollar-sign"></i></a>
@@ -169,23 +159,32 @@
     <!-- menu end -->
 
     <!-- Shop start -->
-    <!-- <section class="shop">
-      <h1 class="tittle">Belanja</h1>
-      <div class="main">
-        <div class="product">
-          <p>Coffe <span>Arabika</span></p>
-          <button>
-            <p>Rincian produk</p>
-            <i data-feather="eye"></i>
-          </button>
-          <button id="shoping-bag">
-            <p>Masukan keranjang</p>
-            <i data-feather="shopping-bag"></i>
-          </button>
-          <img src="./asset/shop.jpg" alt="" />
+    <section class="product" id="product">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti optio
+        culpa vitae exercitationem, magni nam.
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shoping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="./asset/shop.jpg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- Shop end -->
 
     <!-- contact start -->
@@ -239,6 +238,33 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- Modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="" class="close-icon"><i data-feather="x">X</i></a>
+        <div class="modal-content">
+          <img src="./asset/shop.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Coffe Beans</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              excepturi, molestias ratione dolorum maxime pariatur esse
+              consectetur omnis, ipsum quaerat consequatur rerum assumenda
+              suscipit ut laudantium aliquid tenetur veritatis porro!
+            </p>
+          </div>
+        </div>
+        <div class="product-stars">
+          <i data-feather="star" class="star"></i>
+        </div>
+        <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+        <a href=""
+          ><i data-feather="shoping-cart"><span>Add To Cart</span></i></a
+        >
+      </div>
+    </div>
+    <!-- Modal box item detail end -->
     <!-- feather icons -->
     <script>
       feather.replace();

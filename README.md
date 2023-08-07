@@ -1,14 +1,9 @@
-# Azharu71.github.io
+Ini merupakan latihan web saya tanpa menggunakan framework apapun
 
-# Cafe Ingin Ngopi
-
-# Web Latihan
+# Web Latihan Cafe Ingin Ngopi
 
 ### Yang Berisi:
 
-```
-HTML
-CSS
-JAVASCRIP
-
-```
+- HTML
+- CSS
+- JAVASCRIPT

@@ -1,6 +1,6 @@
-Ini merupakan latihan web saya tanpa menggunakan framework apapun
-
 # Web Latihan Cafe Ingin Ngopi
+
+Ini merupakan latihan web saya tanpa menggunakan framework apapun
 
 ### Yang Berisi:
 

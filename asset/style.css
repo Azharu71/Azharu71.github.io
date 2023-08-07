@@ -2,15 +2,17 @@
   --primary: #b6895b;
   --bg: #010101;
 }
-
-* {
+.bi{
+  font-size: 1.4rem;
+}
+*, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -336,9 +338,6 @@ body {
   padding: 0.8rem;
 }
 
-.product .product-stars i .star {
-  fill: var(--primary);
-}
 
 .product .product-price {
   font-size: 1.3rem;
@@ -446,7 +445,7 @@ footer .credit a {
   margin: 15% auto;
   padding: 1.2rem;
   border: 1px solid #666;
-  animation: slideToBottom;
+  animation: slideToBottom .5s;
 }
 /* modal animation */
 @keyframes slideToBottom {
@@ -469,6 +468,7 @@ footer .credit a {
 .modal-content {
   display: flex;
   flex-wrap: nowrap;
+  
 }
 
 .modal-content img{
@@ -482,11 +482,10 @@ footer .credit a {
   line-height: 1.8rem;
   margin-top: 1.2rem;
 }
-.modal-content a{
-  height: 7rem;
+.modal-content2 a{
   display: flex;
-  gap: 1rem;
-  width: 12rem;
+  /* gap: 1rem; */
+  width: 17rem;
   background-color: var(--primary);
   color: #fff;
   margin-top: 1rem;
@@ -503,6 +502,9 @@ footer .credit a {
 @media (max-width: 800px) {
   html {
     font-size: 62.5%;
+  }
+  .bi{
+    font-size: 2rem;
   }
   #hamburger {
     display: inline-block;
